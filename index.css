@@ -1,0 +1,145 @@
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+.logo {
+  font-family: "Lato", "Verdana", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  /* ความกว้าง navbar */
+  width: 1100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+
+  background: #000;
+  transition: 0.7s all;
+  z-index: 100;
+}
+
+header.alt-header {
+  background: #fff;
+}
+
+.alt-header a {
+  color: #000;
+}
+
+body.header-fixed header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 25px;
+  transition: 0.3s all;
+}
+
+nav a:hover {
+  background: red;
+}
+
+.logo {
+  float: left;
+  color: #fff;
+  font-size: 50px;
+  line-height: 60px;
+  transition: 0.7s all;
+}
+
+body.header-fixed .logo {
+  font-size: 30px;
+}
+
+section .inner {
+  padding-top: 200px;
+}
+/* space ช่องว่างหลอกตา ระหว่าง navbar */
+.space {
+  padding: 50px;
+}
+
+/* img slider */
+.topic {
+  margin: auto;
+  width: 90%;
+  padding: 50px 0;
+}
+.topic h1 {
+  font-size: 50px;
+}
+.cell {
+  width: 33%;
+  border: 1px solid;
+  margin: 0 15px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.cell .cellimg {
+  width: 100%;
+  height: 350px;
+  background-color: rgb(107, 107, 107);
+}
+.imgslider-corousel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-carousel {
+  width: 90%;
+}

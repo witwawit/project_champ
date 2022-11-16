@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header id="topnav">
+      <div class="inner">
+        <div class="logo">logo</div>
+        <nav role="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quizs</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- space -->
+    <div class="space"></div>
+
+    <!-- button -->
+    <section class="create-part">
+      <div class="button" onclick="">Add Quiz</div>
+    </section>
+  </body>
+
+  <!-- css only in this file -->
+  <style>
+    .create-part {
+      display: flex;
+      justify-content: center;
+    }
+    .button {
+      background: coral;
+      padding: 1rem 3rem;
+      color: white;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: tomato;
+      transform: scale(1.1);
+      transition: 0.3s ease;
+    }
+  </style>
+</html>

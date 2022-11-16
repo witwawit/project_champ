@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- import boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header id="topnav">
+      <div class="inner">
+        <div class="logo">logo</div>
+        <nav role="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quizs</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- space -->
+    <div class="space"></div>
+
+    <!-- สมาชิก -->
+    <h1 class="topic">Members</h1>
+    <section class="members">
+      <div class="each-member">
+        <div class="profile">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=640:*"
+          />
+        </div>
+        <div class="detail">
+          <h3>Name : Mhanai Kwai</h3>
+          <h3>Student ID : 12345678910</h3>
+          <h3>Duty : Front-end Dev</h3>
+          <h3>Phone : 077-8889910</h3>
+          <div class="icon">
+            <a href="#"
+              ><i class="bx bxl-facebook-circle" style="color: #ffffff"></i
+            ></a>
+            <a href="#"
+              ><i class="bx bxl-instagram-alt" style="color: #ffffff"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="each-member">
+        <div class="detail">
+          <h3>Name : Mhanai Kwai</h3>
+          <h3>Student ID : 12345678910</h3>
+          <h3>Duty : Front-end Dev</h3>
+          <h3>Phone : 077-8889910</h3>
+          <div class="icon2">
+            <a href="#"
+              ><i class="bx bxl-facebook-circle" style="color: #ffffff"></i
+            ></a>
+            <a href="#"
+              ><i class="bx bxl-instagram-alt" style="color: #ffffff"></i
+            ></a>
+          </div>
+        </div>
+        <div class="profile">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=640:*"
+          />
+        </div>
+      </div>
+      <div class="each-member">
+        <div class="profile">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=640:*"
+          />
+        </div>
+        <div class="detail">
+          <h3>Name : Mhanai Kwai</h3>
+          <h3>Student ID : 12345678910</h3>
+          <h3>Duty : Front-end Dev</h3>
+          <h3>Phone : 077-8889910</h3>
+          <div class="icon">
+            <a href="#"
+              ><i class="bx bxl-facebook-circle" style="color: #ffffff"></i
+            ></a>
+            <a href="#"
+              ><i class="bx bxl-instagram-alt" style="color: #ffffff"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- css only in this file -->
+  <style>
+    .topic {
+      text-align: center;
+    }
+    .each-member {
+      margin: auto;
+      width: 70%;
+      display: flex;
+      justify-content: space-around;
+      height: 200px;
+      margin-bottom: 5rem;
+    }
+    .profile {
+      width: 20%;
+      background-color: green;
+      border-radius: 50%;
+    }
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .detail {
+      border-radius: 10px;
+      width: 75%;
+      background-color: green;
+      padding: 2rem 3rem;
+      line-height: 2rem;
+      position: relative;
+    }
+    .detail:nth-child(1) {
+      text-align: end;
+    }
+    .detail h3 {
+      color: white;
+    }
+    .icon {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      bottom: 30px;
+    }
+    .icon2 {
+      display: flex;
+      position: absolute;
+      left: 20px;
+      bottom: 30px;
+    }
+    .icon i,
+    .icon2 i {
+      font-size: 2rem;
+      margin: 0 0.5rem;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+    .icon i:hover,
+    .icon2 i:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</html>

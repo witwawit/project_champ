@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- image slider css-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- image slider jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header id="topnav">
+      <div class="inner">
+        <div class="logo">logo</div>
+        <nav role="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quizs</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- space -->
+    <div class="space"></div>
+
+    <!-- image slider part -->
+    <div class="topic">
+      <h1>Python</h1>
+    </div>
+
+    <div class="imgslider-corousel">
+      <div class="main-carousel">
+        <!-- ก๊อปเท่าที่อยากให้มีกี่อัน -->
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- image slider part2 -->
+    <div class="topic">
+      <h1>Quizs</h1>
+    </div>
+
+    <div class="imgslider-corousel">
+      <div class="main-carousel">
+        <!-- ก๊อปเท่าที่อยากให้มีกี่อัน -->
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+        <div class="cell">
+          <a href><div class="cellimg"></div></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- image slider JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- image slider Javascript & jquery -->
+    <script type="text/javascript">
+      $(".main-carousel").flickity({
+        // options
+        cellAlign: "left",
+        wrapAround: true,
+        freeScroll: true,
+      });
+    </script>
+  </body>
+</html>
